@@ -1,0 +1,117 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.main-body{
+  padding-top: 20px;
+  max-width: 1248px;
+  margin: 0 auto;
+}
+
+.mat-form-field{
+  width: 100%;
+  
+}
+
+.action{
+  
+  display: flex;
+  gap: 5px;
+
+ 
+}
+
+
+/* 
+*
+  
+  .main-container{
+    display: flex;
+    height: 80vh;
+    position: relative;
+    
+  }
+  
+  .container{
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      background: #821d33;
+      clip-path: polygon(0% 0,90% 0,85% 90%,0 500%);
+      animation: slideDown 2s ease-in-out;
+      
+  }
+  
+  .container1{
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      animation: slideDown 2s ease-in-out;
+      background: rgb(1, 31, 31);
+      clip-path: polygon(100% 20%,44.9% 70%,59.1% 100%,100% 100%);
+  }
+  
+  .container2{
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      animation: slideDown 1s ease-in-out;
+      background: rgb(2, 202, 202);
+      clip-path: polygon(100% 40.1%,44.9% 70.1%,9.9% 0,100% 0);
+  }
+  
+  .logo-container{
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 0 auto;
+    animation: icons  2s steps(10);
+    width: 100%;
+   
+    
+  }
+  
+
+  
+  
+  
+  @keyframes slideDown {
+      from {
+        top: 10rem;
+        opacity: 0;
+        
+      }
+    
+      to {
+        top: 0;
+        opacity: 1;
+       
+      }
+  
+    }
+  
+    
+  @keyframes icons {
+    from {
+      
+      transform: rotateX(0deg);
+    }
+  
+    to {
+     
+      transform: rotateX(360deg);
+    }
+  
+  }
+  
+  
+    */

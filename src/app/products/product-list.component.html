@@ -1,0 +1,65 @@
+
+<div class="main-container">
+    <div class="card">
+        <div  class="card-header">{{pageTitle}}</div>
+    
+        
+    </div>
+    
+    <div class="card-body">
+        <div class="row">
+            <div class="filter-text">Filter by:</div>
+            <div class="filter-input-container">
+                <input class="input" type="text" [(ngModel)]='listFilter'/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="filter-input-container">
+                <div class="filter-input-result">Filter by: {{listFilter | uppercase}}</div>
+            </div>
+        </div>
+    
+        <div class="table-responsive">
+            <div class="table" *ngIf="products.length">
+                <thead class="table-header">
+                    <tr>
+                        <th>
+                            <button [class.btn-btn-primary]="showImage" [class.btn-btn-green]="!showImage" (click)="toggleImage()">
+                                {{ showImage ? 'Hide' : 'Show' }} Image
+                              </button>
+                        </th>
+                        <th>Brand</th>
+                        <th>Model Name</th>
+                        <th>Screen Size</th>
+                        <th>Price</th>
+                        <th>Operating System</th>
+                        <th>Color</th>
+                        <th>Hard Disk Size</th>
+                        <th>CPU Model</th>
+                        <th>Ram Memory Installed</th>
+                        <th>Reviews</th>
+                        <th></th>
+
+                    </tr>
+                </thead>
+                <tbody class="table-products">
+                    <tr *ngFor='let product of filteredProducts'>
+                        <td><img [src]='product.imageUrl' [title]='product.productName'[style.width.px]="imageWidth"[style.margin.px]="imageMargin" *ngIf="showImage"></td>
+                        <td>{{product.productName | uppercase  }} </td>
+                        <td>{{product.model | uppercase | convertToSpaces: '-'}}</td>
+                        <td>{{product.ScreenSize}}</td>
+                        <td>{{product.price | currency:'USD':'symbol':'2.2-2'}}</td>
+                        <td>{{product.operatingSystem}}</td>
+                        <td>{{product.color}}</td>
+                        <td>{{product.hardDiskSize}}</td>
+                        <td>{{product.cPUModel}}</td>
+                        <td>{{product.ramMemoryInstalled}}</td>
+                       
+                        <td><pm-star [rating]="product.starRating"></pm-star></td>
+                   
+                    </tr>
+                </tbody>
+            </div>
+        </div>
+    </div>
+</div>

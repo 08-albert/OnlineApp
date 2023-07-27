@@ -1,0 +1,88 @@
+<!-- <header>
+    <div class="container">
+        <nav>
+          <ul class="list">
+            
+            <li><span class="material-icons">polymer</span><a routerLink="" class="" href="#">home</a></li>
+            <li><span class="material-icons">code</span><a routerLink="/web-app" href="#">web-project</a></li>
+            <li><span class="material-icons">contact_support</span><a routerLink="/app-products"  href="#">online Shop</a></li>
+            <li><span class="material-icons">navigate_next</span><a href="#">about</a></li>
+            
+         
+          </ul>
+        </nav>
+        <div class="language-bar">
+          <button class="btn-language-box">Login</button>
+          <button class="btn-language-box2">Register</button>
+        </div>
+      </div>
+</header> -->
+<!-- <header class="navbar"[ngClass]="{'navbar-fixed':isFixedNavbar}">
+  <div class="container" fxLayout="row wrap" fxLayoutAlign="end center">
+    <div class="navbar-mobile-top" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="end center">
+    <div class="navbar-logo">
+    
+    </div>
+    <button mat-icon-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+    <mat-icon>{{!navbarOpened ? 'menu': 'close'}}</mat-icon>
+    </button>
+    </div>
+    <div fxFlex class="top-navbar">
+    <span fxFlex></span>
+    <a mat-button class="navbar-btn" routerLink="" ><strong>home</strong></a>
+    <a mat-button class="navbar-btn" routerLink="/web-app"><strong>web-projects</strong></a>
+    <a mat-button class="navbar-btn" routerLink="/app-products"><strong>online Shop</strong></a>
+    <a mat-button class="navbar-btn" ><strong>about</strong></a>
+    </div>
+    <div class="language-bar">
+      <span class="me-3">Register for free</span>
+      <button type="button" routerLink='/login' class="btn btn-outline-light btn-rounded">Sign up!</button>
+     
+    </div>
+    </div> -->
+
+    
+<!-- </header> -->
+
+<header>
+  <div class = "brand">
+    <span class="mdi mdi-github"></span>
+    <h1>Brand</h1>
+    </div>
+    <!-- <span  class="material-icons" id="menuIcon" (click)="menuItemClicked()" >menu</span> -->
+   
+   
+    <div class="navbar">
+      <div class="searchBox" >
+        <input type="text" placeholder="Search here">
+        <span class="material-icons" id="searchIcon">search</span>
+      </div>
+      <ul *ngIf="showContent">
+        <li>
+          <mat-icon routerLink="/"aria-hidden="false" aria-label="Example home icon" fontIcon="home" id="headIcon"></mat-icon>  
+          <a href="#">Home</a>
+        </li>
+
+        <li >
+          <span routerLink="/web-app" class="material-icons" id="headIcon">work</span>
+          <a >Works</a>
+        </li>
+        
+        <li>
+          <span routerLink="/app-products" class="material-icons" id="headIcon">store</span>
+          <a routerLink="/app-products">OnlineShop</a>
+        </li>
+
+        <li>
+          <span routerLink="/login"class="material-icons" id="headIcon">  account_circle</span>
+          <a href="#">Acount</a>
+        </li>
+
+        <li>
+          <span class="material-icons" id="headIcon">logout</span>
+          <a href="#">Signout</a>
+        </li>
+      </ul>
+    </div>
+    
+</header>

@@ -1,0 +1,60 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  color:wheat;  
+}
+
+
+.main-container{
+ height: 100vh;
+ display: flexbox;
+ justify-content: center;
+ align-items: center;
+ background-color: #1c3c49;
+ color: wheat;
+ } 
+
+ .filter-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px ;
+  color:wheat;  
+ }
+
+ .filter-input-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0, 0.3 );
+  color:wheat;  
+ }  
+
+ .input{
+  width: 100px;
+  color:black;  
+  font-weight: 500;
+  transition: 0.8s;
+
+ }
+
+ .btn-btn-primary {
+  background-color: red;
+}
+
+.btn-btn-green {
+  background-color: green;
+}
+
+ .card-header{
+  color: #1c3c49;
+ }
+
+
